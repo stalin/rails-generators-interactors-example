@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Sample rails application to experiment generators, interactions and dynamic workflow
