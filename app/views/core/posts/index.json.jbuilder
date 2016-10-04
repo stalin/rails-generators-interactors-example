@@ -1,0 +1,1 @@
+json.array! @core_posts, partial: 'core_posts/core_post', as: :core_post

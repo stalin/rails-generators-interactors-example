@@ -1,0 +1,1 @@
+json.partial! "core_posts/core_post", core_post: @core_post

@@ -1,0 +1,40 @@
+<p>
+  This is rendering from hdfc
+</p>
+<%= form_for(core_post, as: 'core_post', url: core_post.new_record? ? post_index_path : post_path(core_post)) do |f| %>
+  <% if core_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(core_post.errors.count, "error") %> prohibited this core_post from being saved:</h2>
+
+      <ul>
+      <% core_post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit value: 'Hdfc Post' %>
+  </div>
+<% end %>
